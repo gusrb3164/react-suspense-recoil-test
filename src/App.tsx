@@ -1,3 +1,4 @@
+import React from 'react';
 import { Suspense } from 'react';
 import { RecoilRoot } from 'recoil';
 function App() {
