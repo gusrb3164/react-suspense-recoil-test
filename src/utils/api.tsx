@@ -5,9 +5,9 @@ interface Iuser {
   completed: boolean;
 }
 export const userApi = {
-  getUser: async (): Promise<Iuser> => {
+  getUser: async (url: string): Promise<Iuser> => {
     try {
-      const data = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+      const data = await fetch(url);
       console.log(data);
 
       return data.json();
